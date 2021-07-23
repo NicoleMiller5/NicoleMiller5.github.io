@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <!--Meta-->
         <meta http-equiv="content-language" content="en">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Photos, Website, Photography">
         <meta name="author" content="Nicole Miller">
         <meta name="publisher" content="Nicole Miller">
         <meta name="copyright" content="Nicole Miller">
@@ -17,19 +16,36 @@
         <title>Nicole Miller's website</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <script src="assets/winbox/winbox.bundle.js"></script>
     </head>
     <body>
         
         <ul class="topnav">
-          <li><a class="active" href="Home.html">Home</a></li>
+          <li><a class="active" href="/Pages/Home/">Home</a></li>
           <li><a href="Page1.html">Page1</a></li>
           <li><a href="Page2.html">Page2</a></li>
-          <li class="right" ><a href="About.html">About</a></li>
+          <li class="right" ><a href="https://github.com/NicoleMiller5/NicoleMiller5.github.io">GitHub Profile</a></li>
         </ul>
-        <div class="title">
-            <h1>Hello There!</h1>
-            <h2>Welcome To My Website</h2>
+        <div class="title_div">
+            <h1 id="title" onmouseover="title_hover()" onmouseleave="title_unhover()">Hello There!</h1>
+            <h2 id="subtitle">Welcome To My Website</h2>
         </div>
-        <script src="" async defer></script>
+        <div class="box">
+            <h3>Heading...</h3>
+            <img src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" width="200px" style="float: right;margin-right: 10px;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque magnam deleniti voluptates quas! Nisi soluta aliquam voluptas, quia temporibus consequuntur. Officia quibusdam facilis eveniet praesentium corrupti dolorem quidem dicta voluptas!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis optio atque similique suscipit impedit neque nostrum ipsa iste distinctio asperiores, exercitationem cupiditate. Voluptate soluta, laborum suscipit optio provident nesciunt. Corporis.</p>
+            <h3>Heading...</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi repudiandae deserunt labore error reiciendis a quia ipsam itaque velit minus natus, sapiente rem autem quis, praesentium commodi totam aliquam vitae?</p>
+            <script>
+                new WinBox("WinBox.js", {
+
+                    url: "https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+                    });
+            </script>
+        </div>
+        <script src="assets/js/animate_title.js" async defer></script>
     </body>
 </html> 
